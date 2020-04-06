@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width='match_parent'
+    android:layout_height='match_parent'
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    tools:context=".MainActivity">
+    <TextView
+            android:id="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FEEDBACK FORM"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+            android:textSize="30dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="150dp">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="Enter your name"
+        android:background="@drawable/shape"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp"
+        />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/roll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your rollno"
+            android:background="@drawable/shape"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginBottom="30dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your email"
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/section"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp"
+        />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your mobile no"
+        android:id="@+id/phone"
+        android:layout_below="@+id/email"
+        android:inputType="phone"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp"
+        />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/college"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:background="@drawable/shape"
+        android:hint="SNIST"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yearofjoining"
+            android:layout_below="@+id/college"
+            android:hint="Select year of joining"
+            android:inputType="date"
+            android:background="@drawable/shape"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginBottom="30dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/yos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yearofjoining"
+            android:spinnerMode="dialog"
+            android:entries="@array/yos"
+            android:prompt="@string/yospromp"
+            android:layout_marginBottom="40dp"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Spinner
+        android:id="@+id/branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yos"
+        android:spinnerMode="dialog"
+        android:entries="@array/Branch"
+        android:prompt="@string/branchpromp"
+        android:layout_marginBottom="40dp"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Spinner
+        android:id="@+id/section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/college"
+        android:spinnerMode="dialog"
+        android:entries="@array/Section"
+        android:prompt="@string/sectionpromp"
+        android:layout_marginBottom="40dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/suggest"
+        android:layout_below="@+id/section"
+        android:hint="Any Suggestions"
+        android:inputType="textLongMessage"
+        android:layout_marginBottom="40dp"
+        />
+   </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Submit"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        android:id="@+id/button"
+        />
+
+</LinearLayout>
+</RelativeLayout>
+</ScrollView>

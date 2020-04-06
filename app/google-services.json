@@ -1,0 +1,43 @@
+
+{
+  "project_info": {
+    "project_number": "40618675460",
+    "firebase_url": "https://eca-feedback.firebaseio.com",
+    "project_id": "eca-feedback",
+    "storage_bucket": "eca-feedback.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40618675460:android:54ee5388ef5c1683",
+        "android_client_info": {
+          "package_name": "com.example.feedback"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40618675460-lr9kb5uqq65a6pqucoerd1j4pj8edd32.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwRe3BNnSOtgBizqQjAoaxQg1-7OzKSyU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
